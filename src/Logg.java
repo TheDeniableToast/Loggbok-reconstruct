@@ -7,6 +7,10 @@ public class Logg {
         LoggModel theModel = new LoggModel();
         LoggController theController = new LoggController(theModel, theView);
 
-
+        JFrame frame = new JFrame("LoggView");
+        frame.setContentPane(theView.getLoggPanel());
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setVisible(true);
     }
 }
