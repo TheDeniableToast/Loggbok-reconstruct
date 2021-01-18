@@ -2,6 +2,12 @@ import javax.swing.*;
 
 public class Logg {
 
+    /**
+     *This class collects the individual parts of the project and lets them run at the same time
+     *
+     * @param args the name of the string array that stores java command line arguments
+     */
+
     public static void main(String[] args) {
         LoggView theView = new LoggView();
         LoggModel theModel = new LoggModel();
